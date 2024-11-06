@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,46 @@
         // Get CSRF token from meta tag
         const token = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
     </script>
+    <style>
+        body {
+            background-color: #212529;
+            color: #e9ecef;
+        }
+        .card {
+            background-color: #2c3034;
+            border-color: #373b3e;
+        }
+        .card-header {
+            background-color: #343a40;
+            border-bottom-color: #373b3e;
+        }
+        .modal-content {
+            background-color: #2c3034;
+            border-color: #373b3e;
+        }
+        .modal-header {
+            border-bottom-color: #373b3e;
+        }
+        .modal-footer {
+            border-top-color: #373b3e;
+        }
+        .form-control, .form-select {
+            background-color: #343a40;
+            border-color: #495057;
+            color: #e9ecef;
+        }
+        .form-control:focus, .form-select:focus {
+            background-color: #3d444a;
+            border-color: #565e64;
+            color: #e9ecef;
+        }
+        .table {
+            color: #e9ecef;
+        }
+        .table td, .table th {
+            border-color: #373b3e;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -64,7 +104,7 @@
 
         <div class="card">
             <div class="card-body">
-                <table class="table">
+                <table class="table table-dark table-hover">
                     <thead>
                         <tr>
                             <th>ID</th>
